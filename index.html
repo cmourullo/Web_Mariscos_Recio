@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Mariscos Recio</title>
+		<link href="./css/Recio.css" rel="stylesheet" type="text/css"/>
+		<link href="./css/Recio_m.css" rel="stylesheet" type="text/css" media="(max-width: 1100px)"/>
+		<link href="./css/Recio_p.css" rel="stylesheet" type="text/css" media="(max-width: 800px), handheld and (max-width: 600px)"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$("#productos").mouseenter(function(){
+					$("#subProductos").css("display", "block");
+				});
+				$("#productos").mouseleave(function(){
+					$("#subProductos").css("display", "none");
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<header class="body">
+			<h1>Mariscos Recio</h1>
+			<h2>La tienda on-line</h2>
+		</header>
+		
+		<nav class="body">
+			<ul>
+			   <li><a href="">¿Quiénes somos?</a></li>
+			   <li id="productos"><a href="">Productos</a>
+			   		<ul id="subProductos" style="display: none;">
+			   			<li><a href="./pescados.html">Nuestros Pescados</a></li>
+			   			<li><a href="./mariscos.html">Nuestros Mariscos</a></li>
+			   		</ul>
+			   </li>
+			   <li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	
+		<aside>
+			<figure>
+				<img id="FotoRecio" src="img/recio.jpg">
+				<figcaption>Mayorista - Señor <mark>Antonio Recio</mark></figcaption>
+			</figure>
+			<p>Antonio Recio Matamoros (Jordi Sánchez): -El pescadero-. Es un mayorista de pescado congelado. Actualmente está separado de Berta debido a una fantasía sexual que mantuvo con el conserje y fue destituido del cargo de presidente en Montepinar.
+				</p>
+			<p>Por otro lado, tiene dos hijos: uno con Nines y otro con su mujer, un adolescente homosexual de 16 años cuyo nombre es Álvaro, además de un imperio profesional llamado “Mariscos Recio”. También es el mayor de una hermana que se encuentra ingresada en el psiquiátrico por un trastorno. En cuanto a su personalidad, se puede decir que es un sátira del estereotipo de "hombre de derechas", amargado, racista y homófobo. Cree que su vida es perfecta, pero en realidad no tiene ni amigos ni mujer.
+				</p>
+			<p>Mantiene una relación laboral con Parrales, su ayudante, un inmigrante al cual explota y muchas veces no duda en hacer comentarios jocosos acerca de su raza.
+				</p>
+			<p>Enlaces de la serie:</p>
+			<ul>
+			   <li class="enlaceslateral"><a href="http://www.telecinco.es/laqueseavecina" target="blank">Web</a></li>
+			   <li class="enlaceslateral"><a href="http://www.facebook.com/laqueseavecina.serie" target="blank">Facebook</a></li>
+			   <li class="enlaceslateral"><a href="http://twitter.com/la_queseavecina" target="blank">Twitter</a></li>
+			   <li class="enlaceslateral"><a href="http://www.tuenti.com/telecinco" target="blank">Tuenti</a></li>
+			</ul>
+		</aside>
+				
+		<section class="body">
+			<video width="320" height="240" controls preload>
+				<source src="./media/mivideo.mp4" type="video/mpeg"/>
+				<source src="./media/mivideo.ogg" type="video/ogg"/>
+				Tu navegador no soporta esta reproducción
+			</video>
+		</section>
+		
+		<section class="body">
+			<p>Mariscos Recio es una empresa ficticia dentro de la serie de Telecinco "La que se avecina". El dueño de esta empresa es el personaje Antonio Recio, papel interpretado por el actor Jordi Sánchez. Esta empresa se dedica a la venta de marisco y pescado y en ella trabajan los personajes de Antonio Recio, Rosario Parrales y Coque.
+				</p>
+			<p>Esta es una web que vamos a desarrollar durante el curso "Desarrollo Móvil multiplataforma - Jquery mobile, HTML5 & CSS3". Se trata de construir la web de la tienda on-line de Mariscos Recio para que los usuarios conozcan la empresa y puedan contactar con ella para adquirir alguno de sus productos. Mediante una sucesión de tareas dentro del curso iremos construyendo esta web.
+				</p>
+		</section>
+		
+		<section class="body">
+			<article id="art_historia">
+				<img class="imagenanuncio" src="../img/logo.jpg" alt="logo" >
+				<p>Historia de Mariscos Recio
+					</p>
+			</article>
+			<article id="art_instalaciones">
+				<img class="imagenanuncio" src="img/pescaderia.jpg" alt="pescadería">
+				<p>Instalaciones
+					</p>
+			</article>
+			<article id="art_audio">
+				<p>Canción de moda en la pescadería
+					</p>
+				<audio controls preload>
+					<source src="./media/micancion.mp3" type="audio/mp3"/>
+					<source src="cancion.ogg" type="audio/ogg"/>
+					Tu navegador no soporta esta reproducción
+				</audio>
+			</article>
+		</section>
+		
+		<section class="body" id="extra">
+			<p>La que se avecina es una serie de televisión española basada en el humor y producida por Mediaset España e Infinia y emitida en Telecinco desde el 22 de abril de 2007 con buenos registros de audiencia. La adaptación de Aquí no hay quien viva obtuvo en su estreno un 28,8% de share y fue líder en casi todas sus emisiones durante la primera temporada. La que se avecina narra la vida de una peculiar comunidad de vecinos situada en «Mirador de Montepinar»: el complejo residencial consta de un bloque de tres pisos con un total de diez viviendas, inclusive dos bajos, dos áticos, una portería, dos locales comerciales, un aparcamiento y las zonas comunes.
+				</p>
+			<p>La serie que cuenta con 80 capítulos a sus espaldas en sus seis temporadas, además de un especial Nochevieja, ha sido emitida en numerosos días de la semana desde su estreno. Uno de sus peores momentos fue en la segunda temporada, cuando tuvo que ser retirada momentáneamente tras diez episodios emitidos y haber sido desplazados en el late night de la cadena. A día de hoy, el equipo y la cadena están satisfechos con los resultados de la comedia de Moreno, ya que ha llegado a superar en varias ocasiones, a muchas ofertas de la competencia.
+				</p>
+			<p>En la actualidad, y desde junio de 2011, La que se avecina está renovada por dos temporadas más, confirmadas como la sexta y séptima debido a su gran éxito en pantalla. Ambas contarán con 13 episodios. Además, se sigue emitiendo diariamente en el canal temático Factoría de Ficción (compitiendo con su antecesora que se emite en Neox), batiendo récords de audiencia, y superando incluso a grandes cadenas. También se emite en el canal de pago Paramount Comedy, así como en las plataformas ONO o Imagenio.
+				</p>
+		</section>
+		
+		<footer class="body">
+			<p>© Copyright Mariscos Recio 2012
+				</p>
+		</footer>
+		
+	</body>
+</html>

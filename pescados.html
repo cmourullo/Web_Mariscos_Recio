@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Nuestros Pescados</title>
+		<link href="./css/Recio.css" rel="stylesheet" type="text/css"/>
+		<link href="./css/Recio_m.css" rel="stylesheet" type="text/css" media="(max-width: 1100px)"/>
+		<link href="./css/Recio_p.css" rel="stylesheet" type="text/css" media="(max-width: 800px), handheld and (max-width: 600px)"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		<link href="./jQuery-modalPopLite/modalPopLite.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="./jQuery-modalPopLite/modalPopLite.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#productos").mouseenter(function(){
+					$("#subProductos").css("display", "block");
+				});
+				$("#productos").mouseleave(function(){
+					$("#subProductos").css("display", "none");
+				});
+			})
+		</script>
+		<script type="text/javascript">
+			$(function () {
+			    $('#popup-anguila').modalPopLite({ openButton: '#clicker-anguila', closeButton: '#close-btn-anguila' });
+			    $('#popup-angula').modalPopLite({ openButton: '#clicker-angula', closeButton: '#close-btn-angula' });
+			    $('#popup-atun').modalPopLite({ openButton: '#clicker-atun', closeButton: '#close-btn-atun' });
+			    $('#popup-bacalao').modalPopLite({ openButton: '#clicker-bacalao', closeButton: '#close-btn-bacalao' });
+			    $('#popup-besugo').modalPopLite({ openButton: '#clicker-besugo', closeButton: '#close-btn-besugo' });
+			    $('#popup-boqueron').modalPopLite({ openButton: '#clicker-boqueron', closeButton: '#close-btn-boqueron' });
+			});
+		</script>
+	</head>
+	<body>
+		<header class="body">
+			<h1>Mariscos Recio</h1>
+			<h2>La tienda on-line</h2>
+		</header>
+		
+		<nav class="body">
+			<ul>
+			   <li><a href="">¿Quiénes somos?</a></li>
+			   <li id="productos"><a href="">Productos</a>
+			   		<ul id="subProductos" style="display: none;">
+			   			<li><a href="./Pescados.html">Nuestros Pescados</a></li>
+			   			<li><a href="./Mariscos.html">Nuestros Mariscos</a></li>
+			   		</ul>
+			   </li>
+			   <li><a href="./contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	
+		<div id="clicker-anguila" class="clicker-pescados"><img src="img/pescados/Anguila.jpg" alt="anguila" >
+				<p>Anguila</p>
+		</div>
+		<div id="popup-anguila" class="popup-pescados" style="background-color: #ccc;">
+			<p>La Anguila es un pescado azul, anguiliforme y de agua dulce. Su cría es la popular angula.</p>
+			<p>La familia Anguillidae está compuesta por miembros que poseen un cuerpo inusual, parecido al de las serpientes. La especie más común es la anguila europea, que ha sido introducida con fines reproductores en todos los continentes habitados por el hombre. Es un catádromo, es decir, un carnívoro migratorio que abandona el agua dulce y va a desovar al mar.</p>
+			<p>Se alimenta de larvas de insectos, gusanos, crustáceos, moluscos, peces pequeños, deshechos y materiales en descomposición.</p><a id="close-btn-anguila" href="#">Cerrar</a>
+		</div>
+
+		<div id="clicker-angula" class="clicker-pescados"><img src="img/pescados/Angula.jpg" alt="angula" >
+				<p>Angula</p>
+		</div>
+		<div id="popup-angula" class="popup-pescados" style="background-color: #ccc;">
+			<p>La angula es la cría de la anguila. La angula es un pescado azul, anguiliforme y de agua dulce.</p>
+			<p>Se capturan en la costa y en los ríos. Se crían en tanques circulares específicos en las piscifactorías europeas. Es el único alevín permitido por las leyes de 
+				esca. Cuando se comercializan suelen tener entre dos y tres años de vida. Vive en aguas costeras poco profundas de todo el mundo.</p><a id="close-btn-angula" href="#">Cerrar</a>
+		</div>
+		
+		<div id="clicker-atun" class="clicker-pescados"><img src="img/pescados/Atún.jpg" alt="atun" >
+				<p>Atún</p>
+		</div>
+		<div id="popup-atun" class="popup-pescados" style="background-color: #ccc;">
+			<p>Recibe el nombre de atún rojo, atún de aleta azul (Bluefin tuna) o cimarrón. Es un pez óseo, de la familia de los escómbridos. Es un pescado azul, atúnido, siendo el atún de mayor tamaño. Está ampliamente distribuido por todo el Atlántico, el Mar Mediterráneo y en el Mar Negro.</p>
+			<p>Regula su temperatura entre los 18º y 25º. Vive por encima de los 25 años. Su estación reproductora dura alrededor de 50 días y tienen una puesta de proximadamente 45.000.000 huevos, de los cuales una gran mayoría son malogrados por los depredadores.</p>
+			<p>Se diferencia del resto de los túnidos en que su aleta pectoral es la más corta, en contraposición con el otro túnido más conocido en España, el atún blanco o bonito del norte.</p><a id="close-btn-atun" href="#">Cerrar</a>
+		</div>
+
+		<div id="clicker-bacalao" class="clicker-pescados"><img src="img/pescados/Bacalao.jpg" alt="bacalao" >
+				<p>Bacalao</p>
+		</div>
+		<div id="popup-bacalao" class="popup-pescados" style="background-color: #ccc;">
+			<p>El bacalao es pescado blanco y de agua salada. Es el miembro de la familia Gadidae más ampliamente distribuido. Existen una gran cantidad de variedades y especies de este producto.</p>
+			<p>Vive en los mares fríos y templados del norte. Vive entre los 4 y 6 grados de temperatura. Es un depredador voraz que se alimenta de zooplancton, gusanos, moluscos, crustáceos y de peces como arenques y anguilas. Se encuentra en lechos marinos lodosos, arenosos o de gravilla.</p><a id="close-btn-bacalao" href="#">Cerrar</a>
+		</div>
+
+		<div id="clicker-besugo" class="clicker-pescados"><img src="img/pescados/Besugo.jpg" alt="besugo" >
+				<p>Besugo</p>
+		</div>
+		<div id="popup-besugo" class="popup-pescados" style="background-color: #ccc;">
+			<p>También llamado voraz o pancho. Es un pescado blanco, semigraso e incluso en invierno se convierte en pescado azul por su contenido en grasa. Es un pescado espárido y de agua salada. Es un importante pez de consumo humano por lo que se pesca intensamente.</p>
+			<p>Pez gregario que vive formando bancos pequeños, en fondos arenosos, cerca de los acantilados rocosos. Los ejemplares jóvenes se encuentran en bajíos costeros, en fondos arenosos, rocosos o lodosos. Suelen estar en profundidades de 40 metros de profundidad cuando son jóvenes, mientras que los adultos llegan a los 300 metros. Su alimentación es principalmente de peces, crustáceos, moluscos.</p><a id="close-btn-besugo" href="#">Cerrar</a>
+		</div>
+
+		<div id="clicker-boqueron" class="clicker-pescados"><img src="img/pescados/Boquerón.jpg" alt="boqueron" >
+				<p>Boquerón</p>
+		</div>
+		<div id="popup-boqueron" class="popup-pescados" style="background-color: #ccc;">
+			<p>También conocido como bocarte. Es pescado azul y de agua salada. El boquerón tiene un gran valor comercial y es uno de los pescados mas consumidos por la población.</p>
+			<p>Es una especie gregaria que forma grandes cardúmenes y que normalmente viven a más de 100 metros de profundidad.</p>
+			<p>Son parte importante de la cadena alimentaria marina, ya que sirven de alimento habitual a los grandes peces. Come plancton, larvas de moluscos y pequeños crustáceos, y de esta forma mantiene el equilibrio biológico y ecológico de las aguas.</p><a id="close-btn-boqueron" href="#">Cerrar</a>
+		</div>
+
+		<footer class="body">
+			<p>© Copyright Mariscos Recio 2012
+				</p>
+		</footer>
+		
+	</body>
+</html>

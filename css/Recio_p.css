@@ -1,0 +1,45 @@
+/* Cambios para el CSS de tamaño pequeño  */
+
+body {
+	font-size: 60.5%;
+}
+
+video {
+	display: none;
+}
+
+#FotoRecio {
+	float: none;
+	margin: 5px auto;
+	width: 100px;
+}
+
+article {
+	display:block;
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+aside {
+		width:80%;
+}
+
+h1 {
+	line-height: 40px;
+}
+
+header {
+padding-bottom: 2px;
+padding-top : 8px;
+line-height: 0px; 
+}
+
+article#art_audio {
+	display:none;
+}
+
+nav ul li { 
+display: block; 
+} 

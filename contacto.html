@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Contacto</title>
+		<link href="./css/Recio.css" rel="stylesheet" type="text/css"/>
+		
+		<script type="text/javascript">
+		function load_canvas(){
+			var canvas1 = document.getElementById('canvas1');
+			var context1 = canvas1.getContext('2d');
+	
+			//Circulo rojo
+			context1.beginPath();
+			context1.shadowColor="rgb(0,0,0)";
+			context1.arc(90,70,50,0,2*Math.PI);
+			context1.fillStyle="rgb(255,0,0)";
+			context1.fill();
+			context1.shadowBlur=0;
+			
+			//Oreja1 roja
+			context1.beginPath();
+			context1.arc(40,40,20,0,Math.PI,false);
+			context1.fillStyle="rgb(255,0,0)";
+			context1.fill();
+			
+			//Oreja2 roja
+			context1.beginPath();
+			context1.arc(140,40,20,0,Math.PI,false);
+			context1.fillStyle="rgb(255,0,0)";
+			context1.fill();
+			
+			//Ojo1 negro
+			context1.beginPath();
+			context1.arc(70,15,10,0,2*Math.PI,true);
+			context1.lineWidth=5;
+			context1.strokeStyle="rgb(0,0,0)";
+			context1.stroke();
+				
+			//Ojo2 negro
+			context1.beginPath();
+			context1.arc(110,15,10,0,2*Math.PI,true);
+			context1.lineWidth=5;
+			context1.strokeStyle="rgb(0,0,0)";
+			context1.stroke();
+
+			//Sonrisa
+			context1.beginPath();
+			context1.lineWidth=5;
+			context1.moveTo(70,70);
+			context1.bezierCurveTo(70,90,110,90,110,70);
+			context1.strokeStyle="rgb(0,0,0)";
+			context1.stroke();
+						
+			//Pata1 roja
+			context1.beginPath();
+			context1.moveTo(55,100);
+			context1.lineTo(35,120);
+			context1.lineWidth=7;
+			context1.strokeStyle="rgb(255,0,0)";
+			context1.stroke();
+
+			//Pata2 roja
+			context1.beginPath();
+			context1.moveTo(125,100);
+			context1.lineTo(145,120);
+			context1.lineWidth=7;
+			context1.strokeStyle="rgb(255,0,0)";
+			context1.stroke();
+
+			
+			context1.font="18px Arial";
+			context1.textAlign="center";
+			context1.fillStyle="rgb(34,139,34)";	
+			context1.fillText("Mariscos Recio",90,150);        
+			context1.textAlign="end";      
+		}
+		</script>
+	</head>
+	<body onload="load_canvas()">
+		<header>
+			<h1>Formulario de Contacto</h1>
+		</header>
+		
+		<form>
+			Nombre: <input type="text" name="nombre" autofocus required><br>
+			Apellidos: <input type="text" name="apellidos"><br>
+			E-mail: <input type="email" name="usremail" required placeholder="Introduce un e-mail válido"><br>
+			Pagina Web: <input type="url" name="homepage"><br>
+			<section id="editable" contenteditable="true">
+				<p>Escriba aquí su mensaje</p>
+			</section>
+			<input type="submit">
+		</form>
+		<canvas id="canvas1" height="600" width="400"></canvas>
+	</body>
+</html>

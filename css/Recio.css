@@ -1,0 +1,261 @@
+/* Los nuevos elementos CSS3 se comportan como bloques*/
+header, footer, section, aside, nav, article { display: block; }
+
+/*-----------------------------------------------------------------------------------------------*/
+@font-face
+{
+	font-family: Familia1;
+	src: url('../fonts/illuminate.ttf');
+}
+
+@keyframes myfirst
+{
+	0% {color: #fff;}
+	50% {color: #bbb;}
+	100% {color: #fff;}
+}
+
+@-webkit-keyframes myfirst
+{
+	0% {color: #fff;}
+	50% {color: #bbb;}
+	100% {color: #fff;}
+}
+
+@-moz-keyframes myfirst
+{
+	0% {color: #fff;}
+	50% {color: #bbb;}
+	100% {color: #fff;}
+}
+
+/* Títulos */
+h1 {
+	font-family: Familia1;
+	font-size: 3.571em;
+	text-shadow: 10px 10px 10px #555555;
+}
+
+h2 {
+	font-size: 1.571em;
+	animation: myfirst 3s infinite;
+	-moz-animation: myfirst 3s infinite;
+	-webkit-animation: myfirst 3s infinite;
+}
+h3 {font-size: 1.429em;}
+h4 {font-size: 1.286em;}
+h5 {font-size: 1.143em;}
+h6 {font-size: 1em;}
+h2, h3, h4, h5, h6 { 
+	font-weight: 400; 
+	line-height: 1.1; 
+	margin-bottom: .8em; 
+}	
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Cuerpo */
+body {
+	background-color:#e8e8e8;
+	background:url(../img/fondo.png);
+	background-size: 250px 250px;
+	margin: 0;
+	font-size: 87.5%;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Trebuchet MS', Trebuchet, Arial, sans-serif; 
+	line-height: 1.429;
+	width: 1024px;
+	margin: 20px auto;
+}
+
+/* Cabecera y Pie de página */
+header, footer {
+	text-align: center;  
+	color: #fff; 
+	background-color: #6f6f6f;
+	box-shadow: 10px 10px 10px #555555;
+	clear:both;
+	border-radius: 10px;
+}
+
+header {
+	padding-bottom: 2px;
+	padding-top : 20px;
+	line-height: 10px; 
+}
+
+footer {
+	padding: 6px;
+	margin-bottom: 30px;
+}
+
+/* Menú de enlaces */
+nav { 
+	background: #6f6f6f; 
+	box-shadow: 10px 10px 10px #555555;
+	line-height: 30px; 
+	text-align: center; 
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+}  
+
+nav ul {
+	list-style: none; 
+	margin: 0 auto; 
+} 
+
+nav ul li {
+	display: inline-block; 
+	height: 30px; 
+}
+
+nav ul li a:link, nav ul li a:visited { 
+	color: #fff; 
+	padding: 5px 1.5em; 
+	text-decoration: none; 
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;	
+} 
+
+nav ul li a:hover, nav ul li a:active, nav ul li.active a:link, nav ul li.active a:visited { 
+	background-color: #444;	
+	color: #fff; 
+}  
+
+nav ul#subProductos {
+	position: absolute;
+	background: #6f6f6f;
+	z-index: 9998;
+} 
+
+nav ul#subProductos li{
+	display: block;
+	width: 200px;
+	height: 30px;
+}
+
+
+/* Articulos y secciones */
+article {
+	display:block;
+	float: left;
+	width: 16%;
+	margin: 10px;
+	padding: 10px;
+}
+
+aside {
+	float:right;
+	background-color: #ccc;
+	box-shadow: 10px 10px 10px #555555;
+	width:22%;
+	padding: 20px;
+	margin-bottom: 30px;	
+	margin-left: 38px;
+	border-radius: 10px;	
+}
+
+section {
+}
+
+/* Div */
+div{
+	float: left;
+	text-align: center;
+}
+
+div.popup-pescados{
+	width:500px;
+	height:310px;
+	background-color:#ccc;
+	padding:10px;
+	text-align: left;
+}
+
+div.clicker-pescados{
+	cursor:pointer;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Extras */
+
+video {
+	width : 70%;
+	background-color: #333333;
+	border-radius: 10px;
+}
+
+ul {
+	padding : 0;
+}
+
+li.enlaceslateral {
+  	background-color: #ededed;
+	list-style: none; 
+	margin: 0 0; 
+}
+
+li.enlaceslateral a:link, li.enlaceslateral a:visited { 
+	color: #222; 
+	display: inline-block; 
+	height: 20px; 
+	padding: 5px 15px; 
+	text-decoration: none; 
+}
+
+li.enlaceslateral:nth-of-type(2n) {
+	background-color: #ddd;
+	color: #dddedd;
+}
+
+li.enlaceslateral (2n+1) {
+	background-color: #eee;
+	color: #ecedec;
+}
+
+#FotoRecio {
+	border: 5px solid white;
+	width: 140px;
+	transform: rotate(6deg);
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+}
+
+section#extra {
+	clear: left;
+	margin-bottom: 40px;
+	column-count: 2;
+	column-gap: 40px;
+	column-rule: 2px outset #eee;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 40px;
+	-webkit-column-rule: 2px outset #eee;
+	-moz-column-count: 2;
+	-moz-column-gap: 40px;
+	-moz-column-rule: 2px outset #eee;
+}
+
+mark {
+	background-color: #eee;
+}
+
+img.imagenanuncio {
+	width: 100%;
+}
+
+p:first-letter{ 
+	font-size:150%;
+}
+
+#mariscos{
+	float: none;
+	width: 700px; 
+	height: 400px; 
+	background: #000;
+	margin-left: auto;
+    margin-right: auto
+}
+
+/*
